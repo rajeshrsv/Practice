@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class PracticeApplication {
-
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home() {
+	
+	@RequestMapping(value="/", method =  RequestMethod.GET)
+	public String home()
+	{
 		return "Hello World";
 	}
 
